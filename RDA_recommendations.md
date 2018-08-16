@@ -16,6 +16,7 @@ These recommendations were developed to record the attribution metadata associat
 ### Recommended Schema
 This Working Group recommends a very basic, three-axiom, schema based on PROV entities and properties shown in the diagram below (and demonstrated in the PROV-O documentation):
 
+![Figure 1](images/recomend_diagram.png "Figure 1")
 
 The key elements of the model for attribution are:
 
@@ -84,6 +85,8 @@ TaDiRAH: A vocabulary focused on digital research in the Humanities. This vocabu
 CRediT: A vocabulary of contributor roles in research. CRediT is a high-level researcher role vocabulary supported by CASRAI. If a Role is to be assigned to an Agent, it should come from a controlled vocabulary, such as CRediT; however CRediT is very high-level and may not have the needed terms. Users should draw terms from a relevant vocabulary or add the terms they need to an existing vocabulary.
 
 OpenRIF/VIVO-ISF: An ontology for representing contributor roles, activities, and relationships in clinical research. VIVO is compatible with PROV. VIVO might be a good adopter if “Curation” is added as a subclass of “Process”. One important point to remember is that PROV is a W3C recommendation, while VIVO is an OBOFoundry ontology. The critical difference between PROV and VIVO is in the Role class. In VIVO, the Role is unique to the Agent while in PROV, the Role is a separate class that can be assigned to multiple Agents. The consequences of choosing PROV or VIVO should be carefully weighed by each adopter, but will be less of an issue if Role is not used. A PROV Agent would be equivalent to a Person, Group, or Organization in VIVO (or rather, a FOAF Agent). A PROV Activity would be equivalent to an Event from the event ontology. A PROV Entity would be any OWL Thing. Below is an attribution model proposed, but not yet implemented, in VIVO.
+
+![Figure 2](images/vivo.png "Figure 2")
 
 The person (or Agent) is the bearer of a Role which may have any of the CRediT types.  The Role is realizedIn an occurrentPart (here called Contributorship and not directly represented in the recommendation) of a workProcess (or Activity) which has output Work (or Entity).  The person “participates_in” (RO_0000056) the work process (not shown).  A datetime can be added to the contributorship to constrain the time of a person’s contribution as shown above, but also to the work process to indicate start and end times for that process (not shown).
 
