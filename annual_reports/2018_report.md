@@ -4,7 +4,7 @@
 Web Site:  [TDWG site](https://github.com/tdwg/attribution) and [RDA site](https://www.rd-alliance.org/groups/metadata-standards-attribution-physical-and-digital-collections-stewardship.html)
  
 |Convener(s): ||
----------------
+--------------||
 |Anne E Thessen|annethessen@gmail.com|
 |Matt Woodburn|M.Woodburn@nhm.ac.uk|
 |Dimitris Koureas|dimitris.koureas@naturalis.nl|
