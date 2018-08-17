@@ -16,7 +16,7 @@ Proposed recommendations in review at Research Data Alliance
 
 ## Activities:
 * Developed use cases and recommendations documents
-* Preparing manuscript for publication is special issue of Data Science Journal for RDA recommendations
+* Preparing manuscript for publication in special issue of Data Science Journal for RDA recommendations
 * Face-to-face meetings convened a RDA Plenary 11 in Berlin, RDA Plenary 10 in Montreal, and TDWG 2017 in Ottawa
 * All meeting notes available in [Google folder](https://drive.google.com/drive/u/0/folders/0BwEsFsVGfEidYmlaWHFDU2dFSkE)
 * Submitted final recommendations to RDA Council for review
