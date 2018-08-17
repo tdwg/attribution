@@ -13,3 +13,5 @@ Despite the importance of research collections, many are not maintained or curat
 * Submit or comment on an issue on this github project.
 
 * Join the RDA/TDWG Working Group at the [RDA website](https://www.rd-alliance.org/groups/metadata-standards-attribution-physical-and-digital-collections-stewardship.html)
+
+Also see related effort [here](https://github.com/dshorthouse/agents_actions)
