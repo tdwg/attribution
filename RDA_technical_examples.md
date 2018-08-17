@@ -5,7 +5,7 @@ The PROV-DM data model [documentation](https://www.w3.org/TR/prov-dm/) defines p
 
 The PROV ontology ([PROV-O](https://www.w3.org/TR/prov-o/)) uses a set of classes, properties and restrictions to express the PROV-DM data model for representing provenance information.  The core of the ontology uses three starting point classes (Agent, Entity and Activity) which are joined by a set of related properties *(Figure 1)*.
 
-![Figure 1](images/recomend_diagram.png "Figure 1")
+![Figure 1](images/prov_diagram.png "Figure 1")
 
 *Figure 1: The three PROV starting point classes and relating properties 
 ([PROV-O: The PROV ontology](http://www.w3.org/TR/prov-o/))*
@@ -25,7 +25,7 @@ For the sake of simplicity, the use cases in this document are focused on demons
 
 However, the core model can easily be built upon by mapping other specialised ontologies and controlled vocabularies to the PROV classes *(Figure 3)*, and there is scope within PROV for far more granular and explicit representations using the various subclasses, qualified properties and expanded terms as required.
 
-![Figure 3](images/recomend_diagram.png "Figure 3")
+![Figure 3](images/domain_diagram.png "Figure 3")
 
 *Figure 3: Examples of linking the core attribution model in PROV to specialised and domain ontologies and controlled vocabularies*
 
@@ -38,7 +38,7 @@ Michael (a researcher) notices that a specimen has an incorrect digital lat/long
 * Michael should receive attribution for reporting the error
 * Sarah should receive attribution for correcting the digital record
 
-![Figure 4](images/recomend_diagram.png "Figure 4")
+![Figure 4](images/use_case_1.png "Figure 4")
 
 **RDF/Turtle representation**
 ```
@@ -126,7 +126,7 @@ Maria (a data curator) reviews the submitted image, and realises that it is rela
     * reviewing the submitted image and detecting that it was related to the original image
     * linking the original image to the enhanced image in the repository database
 
-![Figure 5](images/recomend_diagram.png "Figure 5")
+![Figure 5](images/use_case_2.png "Figure 5")
 
 **RDF/Turtle representation**
 ```
@@ -293,7 +293,7 @@ Sergey also, in the process of recurating one of the specimens, discovers a new 
     * entering the specimen into the collections management database
     * generating a label for the re-curated specimen
 
-![Figure 6](images/recomend_diagram.png "Figure 6")
+![Figure 6](images/use_case_3.png "Figure 6")
 
 **RDF/Turtle representation**
 ```
