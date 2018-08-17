@@ -1,7 +1,7 @@
 # Interest Group Annual Report
 # RDA/TDWG Attribution
 
-Web Site:  [TDWG site](https://github.com/tdwg/attribution) and [RDA site}(https://www.rd-alliance.org/groups/metadata-standards-attribution-physical-and-digital-collections-stewardship.html)
+Web Site:  [TDWG site](https://github.com/tdwg/attribution) and [RDA site](https://www.rd-alliance.org/groups/metadata-standards-attribution-physical-and-digital-collections-stewardship.html)
  
 |Convener(s): |
 ---------------
