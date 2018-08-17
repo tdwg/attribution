@@ -67,6 +67,7 @@ All of the metadata elements in these recommendations are represented in the Met
 The metadata standards we use in our recommendations are all a part of the metadata catalog that these groups have produced. This WG has participated in the discussion of the present elements on the collaborative documents that have been created by the Metadata groups.
 #### Research Data Provenance IG and Provenance Patterns WG
 Tracking provenance for research data is vital to science and scholarship, providing answers to common questions researchers and institutions pose when sharing and exchanging data. Attribution for curatorial activities is an important part of provenance. Our WG had many use cases of interest to the Provenance Patterns WG.
+
 The tasks for the Provenance Patterns Working Group focus on finding, detailing and recommending best practices for provenance representation and management.  The Use Cases developed as part of the RDA/TDWG Metadata Attribution WG have been shared with the Provenance Patterns WG, to be hosted in their use case database.  This will make them easier to find by the broader provenance research community.  The Provenance Patterns Working Group has additionally based a solution pattern on the agent role use case, and will continue drawing on the Attribution Metadata WG use cases in their work going forward.
 
 #### ICSU-WDS & RDA Publishing Data Services WG
