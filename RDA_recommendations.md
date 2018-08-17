@@ -81,7 +81,7 @@ This IG is dedicated to finding solutions for integrating physical samples in an
 
 *SESAR/IGSN: A system of identifiers and metadata for physical samples.* These recommendations include the use of IGSN as identifiers for physical objects where possible. IGSN provides for recording the collector of a sample. The use of IGSN for biological specimens is still being discussed within the biodiversity community. 
 
-*TaDiRAH: A vocabulary focused on digital research in the Humanities.* This vocabulary contains relevant terms such as “Annotating”, “Cleanup”, and “Editing”. Any subclasses added to the PROV Activity class should state their relationship to the TaDiRAH terms. 
+*TaDiRAH: A vocabulary focused on digital research in the Humanities.* This vocabulary contains relevant terms such as “Annotating”, “Cleanup”, and “Editing” that could be used as an Activity, but is specific to the Humanities. Users should draw terms from a relevant vocabulary or add the terms they need to an existing vocabulary. 
 
 *CRediT: A vocabulary of contributor roles in research.* CRediT is a high-level researcher role vocabulary supported by CASRAI. If a Role is to be assigned to an Agent, it should come from a controlled vocabulary, such as CRediT; however CRediT is very high-level and may not have the needed terms. Users should draw terms from a relevant vocabulary or add the terms they need to an existing vocabulary.
 
