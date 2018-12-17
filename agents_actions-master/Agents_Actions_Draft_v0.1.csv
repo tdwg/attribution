@@ -1,0 +1,14 @@
+Property,Expected Type,Required,Description,Example,Notes
+type,URI,TRUE,"One of http://schema.org/Person, http://schema.org/Organization, http://schema.org/Event",http://schema.org/Person,
+identifier,URI,TRUE,"Recommended use of ORCID, VIAF",https://orcid.org/0000-0002-0946-742X,Not for dead people; HUH Botanist index uses PURL & FOAF eg http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/3aa1b6eb-6df7-4095-b9aa-293595287792
+name,Text,TRUE,http://schema.org/name,Margaret Smith,"Full name as woud be written on a legal document (without abbreviation), eg givenName familyName"
+role,URI,FALSE,"schema.org: creator, contributor, participant, organizer, borrower, illustrator; others: determiner, collector, primary collector, primary determiner, observer, primary observer, conservator, processor, curator, primary taxon author, taxon author, data creator, data curator, data manager, technician, reviewer",collector?,"If not schema.org, where else can roles be found?"
+roleName,Text,FALSE,String representation of role,collector,
+action,URI,TRUE,One from controlled list of URIs,collected,"authored, borrowed, collected, conserved, contributed, created, curated, described, determined, illustrated, organized, participated, photographed, processed, reviewed"
+alternateName,Text,FALSE,http://schema.org/alternateName,Margaret Johnson,Maiden name or other
+givenName,Text,FALSE,http://schema.org/givenName,Margaret,
+familyName,Text,FALSE,http://schema.org/familyName,Smith,
+additionalName,Text,FALSE,http://schema.org/additionalName,Peggie Smith,Nicknames
+verbatimName,Text,FALSE,,MC Smith,As written on a specimen label
+startDate,ISO 8601 format,FALSE,http://schema.org/startDate,2016-04-21T20:00,Start date when  action (& optionally in combination with role) was valid
+endDate,ISO 8601 format,FALSE,http://schema.org/endDate,2016-04-21T21:00,End date when action (& optionally in combination with role) was no longer valid
