@@ -1,0 +1,346 @@
+@prefix :	    <http://example.org/> .
+@prefix dct: 	<http://purl.org/dc/terms/> .
+@prefix rdf: 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  	<http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: 	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: 	<http://www.w3.org/ns/prov#> .
+@prefix foaf: 	<http://xmlns.com/foaf/0.1/> .
+@prefix vivo: 	<http://vivoweb.org/ontology/core#> .
+
+:activityReason a rdfs:Class .
+
+# USE CASE 1
+
+# Agents
+
+:michael
+    a prov:Person, prov:Agent ;
+    foaf:givenName 	"Michael" ;
+    vivo:orcidId	"http://orcid.org/NNNN-NNNN-NNNN-NNNN" ;
+.
+
+:sarah
+    a prov:Person, prov:Agent ;
+    foaf:givenName 	"Sarah" ;
+    vivo:orcidId	"http://orcid.org/NNNN-NNNN-NNNN-NNNN" ;
+.
+
+# Contributor roles
+
+:error_reporter a prov:Role .
+:record_editor a prov:Role .
+
+# Entities
+
+:incorrect_lat_long_record
+    a prov:Entity ;
+    prov:Value      "-89.747988,43.138092" ;
+    dct:references  <https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+:correct_lat_long_record
+    a prov:Entity ;
+    dct:references      <https://doi.org/XX.XXXX/XXXXXXX> ;
+    prov:Value          "43.138092,-89.747988" ;
+    prov:wasRevisionOf  :incorrect_lat_long_record ;
+.
+
+# Activities
+
+:correction
+    a prov:Activity ;
+    prov:startedAtTime 	    "2017-11-21T18:42:13-04:00"^^xsd:dateTime ;
+    prov:endedAtTime 		"2017-11-21T18:42:15-04:00"^^xsd:dateTime ;
+    prov:used			    :incorrect_lat_long_record ;
+    prov:generated		    :correct_lat_long_record ;
+    prov:wasAssociatedWith	:michael ;
+    prov:wasAssociatedWith	:sarah ;
+    :activityReason		    "Incorrect longitude and latitude on the digital record." ;
+	
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :michael ;    
+        prov:hadRole :error_reporter ; 
+    ];
+
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :sarah ;    
+        prov:hadRole :record_editor ; 
+    ] ;
+.
+
+# USE CASE 2
+
+# Agents
+
+:kenji
+    a prov:Person, prov:Agent, dct:Agent ;
+    foaf:givenName 	"Kenji";
+    vivo:orcidId	"http://orcid.org/NNNN-NNNN-NNNN-NNNN" ;
+.
+
+:maria
+    a prov:Person, prov:Agent;
+    foaf:givenName 	"Maria";
+    vivo:orcidId	"http://orcid.org/NNNN-NNNN-NNNN-NNNN" ;
+.
+
+# Contributor roles
+
+:analyst a prov:Role .
+:author a prov:Role .
+:image_contributor a prov:Role .
+:reviewer a prov:Role .
+:data_curator a prov:Role .
+
+# Entities
+
+:digital_image
+    a prov:Entity ;
+    dct:references <https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+:enhanced_digital_image
+    a prov:Entity ;
+    dct:references 	        <https://doi.org/XX.XXXX/XXXXXXX> ;
+    prov:wasDerivedFrom     :digital_image ;
+.
+
+:journal_publication
+    a prov:Entity ;
+    dct:references  <https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+:original_image_metadata_record
+    a prov:Entity ;
+    dct:references  <https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+:enhanced_image_metadata_record
+    a prov:Entity ;
+    dct:references  <https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+:image_link_record
+    a prov:Entity ;
+    dct:references  <https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+# Activities
+
+:analysis
+    a prov:Activity ;
+    prov:startedAtTime 	    "2012-04-15T13:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime 	    "2012-04-31T16:00:00-04:00"^^xsd:dateTime ; 
+    prov:used			    :digital_image ;
+    prov:generated		    :enhanced_digital_image ;
+    prov:wasAssociatedWith	:kenji ;
+    :activityReason		    "Image analysis for research paper." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :kenji ;    
+        prov:hadRole :analyst ; 
+    ];
+.
+
+:analysis_publication
+    a prov:Activity ;
+    prov:startedAtTime      "2014-01-02T08:00:00-04:00"^^xsd:dateTime ; 
+    prov:endedAtTime 		"2014-01-02T08:00:00-04:00"^^xsd:dateTime ; 
+    prov:wasInformedBy		:analysis ;
+    prov:used			    :enhanced_digital_image ;
+    prov:generated		    :journal_publication ;
+    prov:wasAssociatedWith  :kenji ;
+    :activityReason		    "Publication of image analysis results." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :kenji ;    
+        prov:hadRole :author ; 
+    ] ;
+.
+
+:image_resubmission
+    a prov:Activity ;
+    prov:startedAtTime 	    "2015-09-15T13:00:00-04:00"^^xsd:dateTime ; 
+    prov:endedAtTime 	    "2015-09-15T13:00:00-04:00"^^xsd:dateTime ; 
+    prov:used			    :journal_publication ;
+    prov:used			    :enhanced_digital_image ;	
+    prov:generated		    :enhanced_image_metadata_record ;
+    prov:wasAssociatedWith  :kenji ;
+    prov:wasAssociatedWith  :maria ;
+    :activityReason		    "Contribution of enhanced derived image back to the repository." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :kenji ;    
+        prov:hadRole :image_contributor ; 
+    ] ;
+
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :maria ;    
+        prov:hadRole :reviewer ; 
+    ] ;
+.
+
+:image_linkage
+    a prov:Activity ;
+    prov:startedAtTime      "2015-09-16T22:00:00-04:00"^^xsd:dateTime ; 
+    prov:endedAtTime        "2015-09-16T22:00:00-04:00"^^xsd:dateTime ;
+    prov:used		        :enhanced_image_metadata_record ;
+    prov:used		        :original_image_metadata_record ;	
+    prov:generated	        :image_link_record ;
+    prov:wasAssociatedWith  :maria ;
+    :activityReason	        "Linking the enhanced version of the image with the original image." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :maria ;    
+        prov:hadRole :data_curator ; 
+    ] ;
+.
+
+# USE CASE 3
+
+# Agents
+
+:sergey
+	a prov:Person, prov:Agent, dct:Agent ;
+	foaf:givenName 	"Sergey";
+	vivo:orcidId	"http://orcid.org/NNNN-NNNN-NNNN-NNNN" ;
+.
+
+# Contributor roles
+
+:specimen_curator a prov:Role .
+:describer a prov:Role .
+:label_author a prov:Role .
+
+# Already defined for use case 2
+# :author a prov:Role .
+# :data_curator a prov:Role .
+
+# Entities
+
+:jar_of_specimens
+    a prov:Entity ;
+.
+
+:individual_specimen
+    a prov:Entity ;
+    prov:wasDerivedFrom :jar_of_specimens ;
+.
+
+:specimen_label
+    a prov:Entity ;
+.
+
+:species_description
+    a prov:Entity ;
+.
+
+:species_journal_publication
+    a prov:Entity ;
+    dct:references 	<https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+:digital_specimen_record
+    a prov:Entity ;
+    dct:references  <https://doi.org/XX.XXXX/XXXXXXX> ;
+.
+
+# Activities
+
+:recuration
+    a prov:Activity ;
+    prov:startedAtTime 	    "2013-04-16T13:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime 		"2013-04-17T15:00:00-04:00"^^xsd:dateTime ;
+    prov:used			    :jar_of_specimens ;
+    prov:generated		    :individual_specimen ;
+    prov:wasAssociatedWith	:sergey ;
+    :activityReason		    "Sorting, identification and recuration of multiple specimens in a jar." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :sergey ;    
+        prov:hadRole :specimen_curator ; 
+   ];
+.
+
+:description
+    a prov:Activity ;
+    prov:startedAtTime 	    "2013-04-16T13:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime 		"2013-06-02T12:00:00-04:00"^^xsd:dateTime ;
+    prov:used			    :individual_specimen ;
+    prov:generated          :species_description ;
+    prov:wasAssociatedWith	:sergey ;
+    :activityReason		    "Publication of image analysis results." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :sergey ;    
+        prov:hadRole :describer ; 
+    ] ;
+.
+
+:publication
+    a prov:Activity ;
+    prov:startedAtTime 	    "2014-01-11T09:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime 		"2014-01-11T09:00:00-04:00"^^xsd:dateTime ;
+    prov:wasInformedBy		:description ;
+    prov:used               :species_description ;
+    prov:generated		    :species_journal_publication ;
+    prov:wasAssociatedWith	:sergey ;
+    :activityReason		    "Description of a new species." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :sergey ;    
+        prov:hadRole :author ; 
+    ] ;
+.
+
+:databasing
+    a prov:Activity ;
+    prov:startedAtTime 	    "2013-06-03T10:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime 	    "2013-06-03T11:00:00-04:00"^^xsd:dateTime ;
+    prov:wasInformedBy		:description ;
+    prov:generated		    :digital_specimen_record ;
+    prov:wasAssociatedWith	:sergey ;
+    :activityReason		    "Creating a specimen-level record in the collections database." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+    a prov:Association ;
+    prov:agent   :sergey ;    
+    prov:hadRole :data_curator ; 
+    ] ;
+.
+
+:labelling
+    a prov:Activity ;
+    prov:startedAtTime 	    "2012-04-15T13:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime 		"2012-04-15T13:00:00-04:00"^^xsd:dateTime ;
+    prov:used			    :digital_specimen_record ;
+    prov:generated		    :specimen_label ;
+    prov:wasAssociatedWith	:sergey ;
+    :activityReason		    "Generating a new label for the recurated specimen." ;
+		
+    # Role association
+    prov:qualifiedAssociation [
+        a prov:Association ;
+        prov:agent   :sergey ;    
+        prov:hadRole :label_author ; 
+    ] ;
+.
