@@ -16,14 +16,13 @@ These recommendations were developed to record the attribution metadata associat
 ### Recommended Schema
 This Working Group recommends a very basic, three-axiom, schema based on PROV entities and properties shown in the diagram below (and demonstrated in the [PROV-O documentation](https://www.w3.org/TR/prov-o/#qualified-terms-figure)):
 
-![Figure 1](images/recomend_diagram.png "Figure 1")
+![Figure 1](images/DSJ_fig_1.png "Figure 1")
 
 The key elements of the model for attribution are:
 
 ```
 Entity wasGeneratedBy Activity
 Activity wasAssociatedWith Agent
-Association hadRole Role
 ```
 
 with some additional attributes assigned to the Activity class:
@@ -33,7 +32,7 @@ Activity has attribute DateTime
 Activity has attribute Reason (added as comment)
 ```
 
-The Entity is the curated data object, whether it be a piece of metadata or a physical object. The Activity is the actual curation activity, such as making a correction or transformation. The Agent is the person performing the curation activity. Every Activity will have a DateTime stamp and a Reason it was performed (optional). The above axioms state that an Entity “wasGeneratedBy” an Activity. The Activity “wasAssociatedWith” an Agent, who performed the Activity. An Activity can be related to an Agent using one of two properties. The first is “wasAssociatedWith” and the second, “qualifiedAssociation”, allows for the assignment of a Role. Assigning a Role to the Agent is optional; if no role is to be assigned, then “wasAssociatedWith” should be used. This ontology design pattern is very similar to work done by Cox and Car (2015).
+The Entity is the curated data object, whether it be a piece of metadata or a physical object. The Activity is the actual curation activity, such as making a correction or transformation. The Agent is the person performing the curation activity. Every Activity will have a DateTime stamp and a Reason it was performed (optional). The above axioms state that an Entity “wasGeneratedBy” an Activity. The Activity “wasAssociatedWith” an Agent, who performed the Activity. An Activity can be related to an Agent using one of two properties. The first is “wasAssociatedWith” and the second, “qualifiedAssociation”, allows for the assignment of a Role. Assigning a Role to the Agent is optional in this recommendation, but specific reifications of this recommendation, such as PROV, may require it. If no role is to be assigned, then “wasAssociatedWith” should be used. This ontology design pattern is very similar to work done by Cox and Car (2015).
 
 Each specific Entity, Activity, and Agent should be represented by a unique, persistent identifier (McMurry et al. 2017). We recommend the use of IGSN for physical objects, ORCID for people, and DOI for digital objects wherever possible. The adoption of IGSN for biological specimens is still being discussed and these recommendations will defer to the future community decision. Activities can be identified internal to the curation management system in place. All Activities, Entities, and Agents should be instances of a PROV Activity class, a PROV Entity class, and a PROV Agent class, respectively. If the appropriate class does not exist as a subclass, users should work with the VIVO community to request the new VIVO subclass which can be mapped to PROV. DateTime should be represented as xsd (CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]). Each discipline should use the identifiers and representations that work best within their community of practice.
 ### Justification
