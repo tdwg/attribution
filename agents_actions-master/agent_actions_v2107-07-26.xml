@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"    
+    xmlns:sch="http://schema.org"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="AgentActions"
+    name="AgentActions" 
+    namespace="http://schema.org/" 
+    rowType="https://github.com/tdwg/attribution/AgentActions"
+    dc:issued="2019-07-26"
+    dc:description="Extension to Occurrence Core to capture agents and optionally the roles they played during the execution of actions."
+    dc:relation="https://github.com/tdwg/attribution/blob/master/agents_actions-master/Agents_Actions_Draft_v0.1.csv"
+    dc:subject="dwc:Occurrence">
+    <property 
+        name="type" 
+        namespace="https://github.com/tdwg/attribution/terms/" 
+        qualName="https://github.com/tdwg/attribution/terms/type" 
+        dc:description='The type of agent, either a person or an organization.' 
+        examples='"http://schema.org/Person", "http://schema.org/Organization"' 
+        type="string" 
+        required="true"/>
+    <property 
+        name="identifierType"
+        thesaurus="https://github.com/tdwg/attribution/vocabulary/identifierType.xml"
+        namespace="https://github.com/tdwg/attribution/terms/" 
+        qualName="https://github.com/tdwg/attribution/terms/identifierType" 
+        dc:description='The type of identifier.' 
+        examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"' 
+        required="true"/>
+    <property 
+        name='identifier' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/identifier' 
+        dc:description='The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links.' 
+        examples='https://orcid.org/0000-0001-6201-7340' 
+        type="string" 
+        required='true'/>
+    <property 
+        name='name' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/name' 
+        dc:description='The name of the item. In this case the full name as woud be written on a legal document (without abbreviation), eg givenName familyName' 
+        examples='Margaret Smith' 
+        type="string" 
+        required='false'/>
+    <property 
+        name='alternateName' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/alternateName' 
+        dc:description='Other full, legal name agent may have been known under, such as maiden name' 
+        examples='Margaret Johnson' 
+        type="string" 
+        required='false'/>
+    <property 
+        name='givenName' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/givenName' 
+        dc:description='' 
+        examples='Margaret' 
+        type="string" 
+        required='false'/>
+    <property 
+        name='familyName' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/familyName' 
+        dc:description='' 
+        examples='Smith' 
+        type="string" 
+        required='false'/>
+    <property 
+        name='additionalName' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/additionalName' 
+        dc:description='Other full name agent may have been known under, such as nickname' 
+        examples='Peggy Smith' 
+        type="string" 
+        required='false'/>
+    <property 
+        name='verbatimName' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/verbatimName' 
+        dc:description='MC Smith' 
+        examples='As written on occurrence' 
+        type="string" 
+        required='false'/>
+    <property 
+        name='action'
+        thesaurus="https://github.com/tdwg/attribution/vocabulary/action.xml"
+        namespace='https://github.com/tdwg/attribution/terms/' 
+        qualName='https://github.com/tdwg/attribution/terms/action' 
+        dc:description='The name of the action. Muste be a URI.' 
+        examples='"https://github.com/tdwg/attribution/terms/collected","https://github.com/tdwg/attribution/terms/identified"' 
+        type="string" 
+        required='true'/>
+    <property 
+        name='role'
+        thesaurus="https://github.com/tdwg/attribution/vocabulary/role.xml"
+        namespace='https://github.com/tdwg/attribution/terms/' 
+        qualName='https://github.com/tdwg/attribution/terms/role' 
+        dc:description='The name of the role agent played in the context of executing the action.' 
+        examples='"primary collector","participant in collecting party"' 
+        type="string" 
+        required='false'/>
+    <property 
+        name='startDate' 
+        namespace='https://schema.org/' 
+        qualName='https://schema.org/startDate' 
+        dc:description='Start date/time in ISO 8601 for when action taken on occurrence was initiated.' 
+        examples='2012-12-02' 
+        type="string" 
+        required='false'/>
+     <property 
+         name='startDate' 
+         namespace='https://schema.org/' 
+         qualName='https://schema.org/endDate' 
+         dc:description='End date/time in ISO 8601 for when action taken on occurrence was completed.' 
+         examples='2012-12-03' 
+         type="string" 
+         required='false'/>
+</extension>
