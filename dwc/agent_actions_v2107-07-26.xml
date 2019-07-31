@@ -9,24 +9,24 @@
     dc:title="AgentActions"
     name="AgentActions" 
     namespace="http://schema.org/" 
-    rowType="https://github.com/tdwg/attribution/AgentActions"
+    rowType="https://github.com/tdwg/attribution/dwc/AgentActions"
     dc:issued="2019-07-26"
     dc:description="Extension to Occurrence Core to capture agents and optionally the roles they played during the execution of actions."
     dc:relation="https://github.com/tdwg/attribution/blob/master/agents_actions-master/Agents_Actions_Draft_v0.1.csv"
     dc:subject="dwc:Occurrence">
     <property 
         name="type" 
-        namespace="https://github.com/tdwg/attribution/terms/" 
-        qualName="https://github.com/tdwg/attribution/terms/type" 
+        namespace="https://github.com/tdwg/attribution/dwc/terms/" 
+        qualName="https://github.com/tdwg/attribution/dwc/terms/type" 
         dc:description='The type of agent, either a person or an organization.' 
         examples='"http://schema.org/Person", "http://schema.org/Organization"' 
         type="string" 
         required="true"/>
     <property 
         name="identifierType"
-        thesaurus="https://github.com/tdwg/attribution/vocabulary/identifierType.xml"
-        namespace="https://github.com/tdwg/attribution/terms/" 
-        qualName="https://github.com/tdwg/attribution/terms/identifierType" 
+        thesaurus="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType.xml"
+        namespace="https://github.com/tdwg/attribution/dwc/terms/" 
+        qualName="https://github.com/tdwg/attribution/dwc/terms/identifierType" 
         dc:description='The type of identifier.' 
         examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"' 
         required="true"/>
@@ -88,18 +88,18 @@
         required='false'/>
     <property 
         name='action'
-        thesaurus="https://github.com/tdwg/attribution/vocabulary/action.xml"
-        namespace='https://github.com/tdwg/attribution/terms/' 
-        qualName='https://github.com/tdwg/attribution/terms/action' 
+        thesaurus="https://github.com/tdwg/attribution/dwc/vocabulary/action.xml"
+        namespace='https://github.com/tdwg/attribution/dwc/terms/' 
+        qualName='https://github.com/tdwg/attribution/dwc/terms/action' 
         dc:description='The name of the action. Muste be a URI.' 
-        examples='"https://github.com/tdwg/attribution/terms/collected","https://github.com/tdwg/attribution/terms/identified"' 
+        examples='"https://github.com/tdwg/attribution/dwc/terms/collected","https://github.com/tdwg/attribution/dwc/terms/identified"' 
         type="string" 
         required='true'/>
     <property 
         name='role'
-        thesaurus="https://github.com/tdwg/attribution/vocabulary/role.xml"
-        namespace='https://github.com/tdwg/attribution/terms/' 
-        qualName='https://github.com/tdwg/attribution/terms/role' 
+        thesaurus="https://github.com/tdwg/attribution/dwc/vocabulary/role.xml"
+        namespace='https://github.com/tdwg/attribution/dwc/terms/' 
+        qualName='https://github.com/tdwg/attribution/dwc/terms/role' 
         dc:description='The name of the role agent played in the context of executing the action.' 
         examples='"primary collector","participant in collecting party"' 
         type="string" 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <thesaurus 
-  dc:URI="https://github.com/tdwg/attribution/vocabulary/role/" 
-  dc:description="Vocabulary of roles agents have in the execution of an action, relevant only to the object" 
+  dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/" 
+  dc:description="Vocabulary of actions executed by agents in the collection, preparation, and dissemination of occurrence data" 
   dc:relation=""
-  dc:title="AgentActions role vocabulary"
+  dc:title="AgentActions action vocabulary"
   dc:issued="2019-07-31"
   xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
