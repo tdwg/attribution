@@ -11,7 +11,7 @@
     namespace="http://schema.org/" 
     rowType="https://github.com/tdwg/attribution/dwc/AgentActions"
     dc:issued="2019-07-26"
-    dc:description="Extension to Occurrence Core to capture agents and optionally the roles they played during the execution of actions."
+    dc:description="Extension to Occurrence Core to capture agents and optionally the specific roles they played in the context of executing actions on occurrences."
     dc:relation="https://github.com/tdwg/attribution/blob/master/agents_actions-master/Agents_Actions_Draft_v0.1.csv"
     dc:subject="dwc:Occurrence">
     <property 
