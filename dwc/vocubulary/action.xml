@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <thesaurus 
   dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/" 
-  dc:description="Vocabulary of actions executed by agents in the collection, preparation, and dissemination of occurrence data" 
+  dc:description="Vocabulary of actions executed by agents on occurrences" 
   dc:relation=""
   dc:title="AgentActions action vocabulary"
   dc:issued="2019-07-31"
