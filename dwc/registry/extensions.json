@@ -1,0 +1,592 @@
+// 20190801115209
+// https://gbrds.gbif-uat.org/registry/extensions.json
+
+{
+  "extensions": [
+    {
+      "description": "A basic species profile with characteristics in addition to textural description which are covered by the description extension.",
+      "title": "Species Profile",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml",
+      "issued": "2019-01-29",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/SpeciesProfile",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "A basic species profile with characteristics in addition to textural description which are covered by the description extension.",
+      "title": "Species Profile",
+      "url": "http://rs.gbif.org/sandbox/extension/speciesprofile_2019-01-29.xml",
+      "issued": "2019-01-29",
+      "isLatest": false,
+      "identifier": "http://rs.gbif.org/terms/1.0/SpeciesProfile",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "Extension to Occurrence Core to capture chronometric age information.",
+      "title": "ChronometricAge",
+      "url": "http://rs.gbif.org/extension/zooarchnet/ChronometricAge_2018-11-13.xml",
+      "issued": "2018-11-13",
+      "isLatest": true,
+      "identifier": "http://zooarchnet.org/dwc/terms/ChronometricAge",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "Extension to Occurrence Core to capture chronometric age information.",
+      "title": "ChronometricAge",
+      "url": "http://rs.gbif.org/sandbox/extension/ChronometricAge_2018-11-13.xml",
+      "issued": "2018-11-13",
+      "isLatest": false,
+      "identifier": "http://zooarchnet.org/dwc/terms/ChronometricAge",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "Support for nomenclatural name relations to be used in a Taxon core DwC archive, specifying a directed relation from the core name to a related name.",
+      "title": "CoL Name Relations",
+      "url": "https://raw.githubusercontent.com/Sp2000/colplus/master/dwca/name_relation.xml",
+      "issued": "2018-06-09",
+      "isLatest": true,
+      "identifier": "http://rs.col.plus/terms/NameRelations",
+      "subject": "Taxon"
+    },
+    {
+      "description": "Support for generic relationships between resources (in Darwin Core). Can be used to describe a relationship (relationshipOfResource) between a related resource (relatedResourceID) and a subject resource (resourceID). These resources can be core records, extension records or external resources. Released January 2018, this version adds resourceID and removes scientificName.",
+      "title": "Darwin Core Resource Relationship",
+      "url": "http://rs.gbif.org/extension/dwc/resource_relation_2018_01_18.xml",
+      "issued": "2018-01-18",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/dwc/terms/ResourceRelationship",
+      "subject": ""
+    },
+    {
+      "description": "Support for generic measurements or facts as defined in Darwin Core. This version adds terms in the dwciri namespace.",
+      "title": "Darwin Core Measurement Or Facts",
+      "url": "http://rs.gbif.org/sandbox/extension/measurements_or_facts.xml",
+      "issued": "2018-01-17",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
+      "subject": ""
+    },
+    {
+      "description": "A Darwin Core Archive extension for specifying the relationsips between taxon concepts, based on the 'TaxonRelationshipAssertion' element of the TDWG Taxon Concept Transfer (XML) Schema. Relationship types include Set Theory types (included_in, etc.) and taxonomic parent-child relationships. Taxon Concepts are specified in the DwCA 'Taxon' module, where a record must have: 1. a name (and ideally also a scientificNameID), 2. a nameAccordingTo (and ideally also a nameAccordingToID), and 3. a taxonConceptID. The latter is used as the key for subjectTaxonConceptID and objectTaxonConceptID in this module.",
+      "title": "Taxon Concept Relationship",
+      "url": "http://rs.gbif.org/sandbox/extension/tcrel.xml",
+      "issued": "2017-08-25",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship",
+      "subject": null
+    },
+    {
+      "description": "Species geographical distribution.",
+      "title": "Plinian Distribution Extension",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/distribution.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/Distribution",
+      "subject": "plic:Distribution; dwc:Taxon"
+    },
+    {
+      "description": "A marker that indicates that an organism lives exclusively in a particular territory and can not be found anywhere else. List of areas structured and categorized by the degree of safety.",
+      "title": "Plinian Endemicity Extension",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/endemicity.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/Endemicity",
+      "subject": "plic:Endemicity; dwc:Taxon"
+    },
+    {
+      "description": "National and/or regional proposed law or group of laws.",
+      "title": "Plinian Legislation Extension",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/legislation.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/Legislation",
+      "subject": "plic:Legislation; dwc:Taxon"
+    },
+    {
+      "description": "Management: actions directed at conserving or restoring species. / Conservation: interventions undertaken designed to preserve species.",
+      "title": "Plinian ManagementAndConservation Extension",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/managementAndConservation.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/ManagementAndConservation",
+      "subject": "plic:ManagementAndConservation; dwc:Taxon"
+    },
+    {
+      "description": "Plinian Core is a set of concepts that defines the necessary basic attributes to integrate and recover the information about species of organisms required by users specialized in biodiversity as well as users of other areas. This extension is supposed to be used in addition to the taxon core and the simple images, vernacular names and references extension.",
+      "title": "Plinian Core Simple Extension",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/pliniancore.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/PlinianCore",
+      "subject": "plic:Plinian Core; dwc:Taxon"
+    },
+    {
+      "description": "Different names for this taxon. This concept is a placeholder field.",
+      "title": "Plinian Synonym Extension",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/synonyms.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/Synonyms",
+      "subject": "plic:Synonyms; dwc:Taxon"
+    },
+    {
+      "description": "Information about the conservation status of the taxon.",
+      "title": "Plinian ThreatStatus Extension ",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/threatStatus.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/ThreatStatus",
+      "subject": "plic:threatStatus; dwc:Taxon"
+    },
+    {
+      "description": "Ways in which species are utilized by people. Including Folklore. Also applied to Animals and Fungi.",
+      "title": "Plinian Uses Extension",
+      "url": "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/uses.xml",
+      "issued": "2016-12-02",
+      "isLatest": true,
+      "identifier": "http://purl.org/plic/terms/3.2.1/Uses",
+      "subject": "dwc:Taxon; plic:Uses"
+    },
+    {
+      "description": "Support for generic measurements or facts, extended version linking to occurrences.      This extension (eMoF) was developed to be used in combination with the Event Core, but is also compatible with other cores. When used with Event Core it allows to create an additional link between the eMoF and the occurrence extension. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.",
+      "title": "Extended Measurement Or Facts",
+      "url": "http://rs.gbif.org/extension/obis/extended_measurement_or_fact.xml",
+      "issued": "2016-09-05",
+      "isLatest": true,
+      "identifier": "http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact",
+      "subject": ""
+    },
+    {
+      "description": "The category of information pertaining to a sampling event. Replaces version issued 2015-05-29 adding record-level term dwc:institutionCode",
+      "title": "Darwin Core Event",
+      "url": "http://rs.gbif.org/core/dwc_event_2016_06_21.xml",
+      "issued": "2016-06-21",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Event",
+      "subject": null
+    },
+    {
+      "description": "Support for vegetation plot survey (relevé) measurements ancillary to those reported using Event core with Occurrence extension. Note all coverage measurements are in percentage.",
+      "title": "GBIF Relevé",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml",
+      "issued": "2016-05-10",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Releve",
+      "subject": "dwc:Event"
+    },
+    {
+      "description": "DwC Taxon extension to exchange invasive species area distributions. It is based on the GBIF distribution extension but adds invasiveness and uses other vocabuarlies",
+      "title": "Invasive Species Distribution",
+      "url": "http://rs.gbif.org/sandbox/extension/issg-distribution.xml",
+      "issued": "2016-04-21",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/issg/terms/Distribution",
+      "subject": "dwc:Taxon checklist"
+    },
+    {
+      "description": "DwC Taxon extension to exchange invasive species pathways.",
+      "title": "Invasive Species Pathways",
+      "url": "http://rs.gbif.org/sandbox/extension/issg-pathway.xml",
+      "issued": "2016-04-20",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/issg/terms/Pathways",
+      "subject": "dwc:Taxon checklist"
+    },
+    {
+      "description": "Support for material sample properties (e.g. tissues, DNA, RNA) as an extension to a Material Sample core. Intended to be a one to one relation to the Material Sample core.",
+      "title": "GGBN Material Sample Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/materialsample.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/MaterialSample",
+      "subject": ""
+    },
+    {
+      "description": "Support for preparation properties as an extension to an Material Sample core. Intended to be a one to many relation to the Material Sample core.",
+      "title": "GGBN Preparation Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/preparation.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/Preparation",
+      "subject": ""
+    },
+    {
+      "description": "Support for loan properties (e.g. specimens, tissues, DNA, RNA) as an extension to a Material Sample core. Intended to be a one to one relation to the Material Sample core.",
+      "title": "GGBN Loan Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/loan.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/Loan",
+      "subject": ""
+    },
+    {
+      "description": "Support for DNA Amplifications as an extension for Material Sample core sample data in Darwin Core. Intended to be a one to many relation to the Material Sample core.",
+      "title": "GGBN Amplification Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/amplification.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/Amplification",
+      "subject": ""
+    },
+    {
+      "description": "Support for all kinds of preservations as an extension for Material Sample core sample data in Darwin Core. Intended to be a one to many relation to the Material Sample core.",
+      "title": "GGBN Preservation Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/preservation.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/Preservation",
+      "subject": ""
+    },
+    {
+      "description": "Support for gel image properties as an extension to an Material Sample core. Intended to be a one to many relation to the Material Sample core.",
+      "title": "GGBN Gel Image Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/gelimage.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/GelImage",
+      "subject": ""
+    },
+    {
+      "description": "Support for all kinds of permits as an extension for Material Sample core sample data in Darwin Core. Intended to be a one to many relation to the Material Sample core.",
+      "title": "GGBN Permit Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/permit.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/Permit",
+      "subject": ""
+    },
+    {
+      "description": "Support for DNA Cloning as an extension for Material Sample core sample data in Darwin Core. Intended to be a one to many relation to the Material Sample core.",
+      "title": "GGBN DNA Cloning Extension",
+      "url": "http://rs.gbif.org/extension/ggbn/cloning.xml",
+      "issued": "2016-01-13",
+      "isLatest": true,
+      "identifier": "http://data.ggbn.org/schemas/ggbn/terms/Cloning",
+      "subject": ""
+    },
+    {
+      "description": "The category of information pertaining to evidence of an occurrence in nature, in a collection, or in a dataset (specimen, observation, etc.). Released July 2015, this version removes terms dcterms:source, dcterms:rights, dwc:individualID, dwc:occurrenceDetails, and adds dcterms:license, dwc:organismQuantity, dwc:organismQuantityType, dwc:organismID, dwc:organismName, dwc:organismScope, dwc:associatedOrganisms, dwc:organismRemarks, dwc:parentEventID, dwc:sampleSizeValue, dwc:sampleSizeUnit.",
+      "title": "Darwin Core Occurrence",
+      "url": "http://rs.gbif.org/core/dwc_occurrence_2015-07-02.xml",
+      "issued": "2015-07-02",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Occurrence",
+      "subject": "dwc:Taxon dwc:Event"
+    },
+    {
+      "description": "The category of information pertaining to a sampling event.",
+      "title": "Darwin Core Event",
+      "url": "http://rs.gbif.org/core/dwc_event_2015_05_29.xml",
+      "issued": "2015-05-29",
+      "isLatest": false,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Event",
+      "subject": null
+    },
+    {
+      "description": "The category of information pertaining to taxonomic names, taxon name usages, or taxon concepts. Released April 2015, this version removes terms dcterms:source and dcterms:rights, and adds dcterms:license.",
+      "title": "Darwin Core Taxon",
+      "url": "http://rs.gbif.org/core/dwc_taxon_2015-04-24.xml",
+      "issued": "2015-04-24",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Taxon",
+      "subject": null
+    },
+    {
+      "description": "The category of information pertaining to evidence of an occurrence in nature, in a collection, or in a dataset (specimen, observation, etc.). Updated 2 Apr 2014 with materialSampleID.",
+      "title": "Darwin Core Occurrence",
+      "url": "http://rs.gbif.org/core/dwc_occurrence.xml",
+      "issued": "2015-04-14",
+      "isLatest": false,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Occurrence",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "The category of information pertaining to a sampling event. Updated March 2014 with newly ratified terms (parentEventID, sampleSizeValue, sampleSizeUnit).",
+      "title": "Darwin Core Event",
+      "url": "http://rs.gbif.org/sandbox/core/dwc_event.xml",
+      "issued": "2015-03-27",
+      "isLatest": false,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Event",
+      "subject": null
+    },
+    {
+      "description": "The Audubon Core is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections. These vocabularies aim to represent information that will help to determine whether a particular resource or collection will be fit for some particular biodiversity science application before acquiring the media. Among others, the vocabularies address such concerns as the management of the media and collections, descriptions of their content, their taxonomic, geographic, and temporal coverage, and the appropriate ways to retrieve, attribute and reproduce them.",
+      "title": "Audubon Media Description",
+      "url": "http://rs.gbif.org/extension/ac/audubon.xml",
+      "issued": "2015-03-19",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/ac/terms/Multimedia",
+      "subject": null
+    },
+    {
+      "description": "The category of information pertaining to taxonomic names, taxon name usages, or taxon concepts. Updated Nov 20011 with newly ratified terms.",
+      "title": "Darwin Core Taxon",
+      "url": "http://rs.gbif.org/core/dwc_taxon.xml",
+      "issued": "2015-02-13",
+      "isLatest": false,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Taxon",
+      "subject": null
+    },
+    {
+      "description": "Support for generic resource rleations according to Darwin Core terms.",
+      "title": "Darwin Core Resource Relationship",
+      "url": "http://rs.gbif.org/extension/dwc/resource_relation.xml",
+      "issued": "2015-02-13",
+      "isLatest": false,
+      "identifier": "http://rs.tdwg.org/dwc/terms/ResourceRelationship",
+      "subject": ""
+    },
+    {
+      "description": "Support for generic measurements or facts as defined in Darwin Core.",
+      "title": "Darwin Core Measurement Or Facts",
+      "url": "http://rs.gbif.org/extension/dwc/measurements_or_facts.xml",
+      "issued": "2015-02-13",
+      "isLatest": false,
+      "identifier": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
+      "subject": ""
+    },
+    {
+      "description": "Support for multiple identification/determinations of species occurrences such as specimens. All identifications including the current one should be listed, while the current should also be repeated in the occurrence core for simple access.",
+      "title": "Darwin Core Identification History",
+      "url": "http://rs.gbif.org/extension/dwc/identification.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/dwc/terms/Identification",
+      "subject": "dwc:Occurrence http://rs.tdwg.org/dwc/terms/MaterialSample"
+    },
+    {
+      "description": "WARNING! THIS DRAFT GERMPLASM EXTENSION HAS BEEN DEPRECATED. SEE: http://rs.gbif.org/extension/germplasm/ FOR THE CURRENT GERMPLASM EXTENSIONS.",
+      "title": "Germplasm (0.1)",
+      "url": "http://rs.gbif.org/extension/nordgen/0.1/germplasm.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmSample",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "Geographic distribution of a taxon",
+      "title": "Species Distribution",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/distribution.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Distribution",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "An extension for specimens and types, including type specimens, type species and type genera and simple specimens unrelated to types.",
+      "title": "Types and Specimen",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/TypesAndSpecimen",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "Bibliography, i.e. list of literature references. For example a taxon or occurrence/specimen.",
+      "title": "Literature References",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/references.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Reference",
+      "subject": ""
+    },
+    {
+      "description": "DwC Taxon extension to exchange simple text/paragraph based taxon descriptions. Not suitable for structured descriptions and keys, but useful for creating species pages.",
+      "title": "Taxon Description",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/description.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Description",
+      "subject": "dwc:Taxon checklist"
+    },
+    {
+      "description": "Simple extension for exchanging metadata about multimedia resources, in particular links to image, video and audio files.",
+      "title": "Simple Multimedia",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/multimedia.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Multimedia",
+      "subject": ""
+    },
+    {
+      "description": "A basic species profile with characteristics in addition to textural description which are covered by the description extension.",
+      "title": "Species Profile",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml",
+      "issued": "2015-02-13",
+      "isLatest": false,
+      "identifier": "http://rs.gbif.org/terms/1.0/SpeciesProfile",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "Extension to core taxa that lists vernacular names for a scientific taxon",
+      "title": "Vernacular Names",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/VernacularName",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "",
+      "title": "Alternative Identifiers",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/identifier.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Identifier",
+      "subject": ""
+    },
+    {
+      "description": "This extension has been DEPRECATED! Please use the newer Multimedia extension instead: http://rs.gbif.org/extension/gbif/1.0/multimedia.xml",
+      "title": "Simple Images (deprecated)",
+      "url": "http://rs.gbif.org/extension/gbif/1.0/images.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Image",
+      "subject": "dwc:Taxon dwc:Occurrence"
+    },
+    {
+      "description": "UK NBN Darwin Core extension for mapping NBN eXchange Format (NXF) files to DwC-A. This extension is likely only applicable for UK National Biodiversity Network and its data providers, and contains some UK specific oddities. This extension is a DRAFT and is to be considered VOLITILE.",
+      "title": "Extension for mapping NBN eXchange Format (NXF) files to DwC-A",
+      "url": "http://rs.gbif.org/sandbox/extension/NBNeXchangeFormat.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.nbn.org.uk/dwc/nxf/0.1/terms/nxfOccurrence",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "Die Kurzbezeichnung Zeigerwerte nach Ellenberg für die \"Ökologischen Zeigerwerte von Pflanzen in Mitteleuropa\" ist ein von Heinz Ellenberg Mitte der 1970er-Jahre erstmals ausführlich beschriebenes Klassifikationsverfahren für mitteleuropäische Pflanzen nach ihrem ökologischen \"Verhalten\" und botanischen Eigenschaften.     Die Zeigerwerte nach Ellenberg sind von ökologischen und botanischen Beobachtungen und Erfahrungen abgeleitete und inzwischen größtenteils durch Standortanalysen und ökophysiologische Untersuchungen bestätigte beziehungsweise abgesicherte Kenngrößen für einzelne Pflanzenarten.",
+      "title": "Ellenbergs Ecological Indicators for European Plants",
+      "url": "http://rs.gbif.org/sandbox/extension/gbif_ellenberg_indicator.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Ellenberg",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "MIxS sample based terms extending a classic Darwin Core Occurrence.",
+      "title": "MIxS Sample",
+      "url": "http://rs.gbif.org/sandbox/extension/mixs_sample.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://gensc.org/ns/mixs/terms/Sample",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "Links of related webpages. Links can be classified with keywords (dc:subject) and should point to human friendly webpages.",
+      "title": "Web Links",
+      "url": "http://rs.gbif.org/sandbox/extension/links.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Links",
+      "subject": "dwc:Occurrence dwc:Taxon"
+    },
+    {
+      "description": "Support for OBIS MBG properties as an extension to a Darwin Occurrence core. Intended to be a one to one relation to the Occurrence core.",
+      "title": "OBIS Marine BioGeography (MBG) Common Terms Extension",
+      "url": "http://rs.gbif.org/sandbox/extension/mbg-common-terms.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.obis.org/obis/extension/mbg/terms/MBGCommonTerms",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "Information about the number of chromosomes of a species",
+      "title": "Chromosomes Count",
+      "url": "http://rs.gbif.org/sandbox/extension/chromosomes.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.gbif.org/terms/1.0/Chromosomes",
+      "subject": "dwc:Taxon"
+    },
+    {
+      "description": "",
+      "title": "GISIN Species Status",
+      "url": "http://rs.gbif.org/sandbox/extension/gisin_2.0_species_status.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://www.gisin.org/IASProfile/SpeciesStatus",
+      "subject": null
+    },
+    {
+      "description": "Support for OBIS MBG Fish Abundance properties as an extension to a Darwin Occurrence core. Intended to be a one to one relation to the Occurrence core.",
+      "title": "OBIS Marine BioGeography (MBG) Fish Abundance Extension",
+      "url": "http://rs.gbif.org/sandbox/extension/mbg-fish-abundance.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.obis.org/obis/extension/mbg/terms/MBGFishAbundance",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "These terms are representation-dependent metadata, referring to specific digital representations of a resource.",
+      "title": "Audubon Media Description",
+      "url": "http://rs.gbif.org/sandbox/extension/audubon_serviceaccesspoint.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/ac/terms/Multimedia#ServiceAccessPointVocabulary",
+      "subject": null
+    },
+    {
+      "description": "Support for OBIS MBG Visual Line Transect Survey (VLTS) properties as an extension to a Darwin Occurrence core. Intended to be a one to one relation to the Occurrence core.",
+      "title": "OBIS Marine BioGeography (MBG) Visual Line Transect Survey Extension",
+      "url": "http://rs.gbif.org/sandbox/extension/mbg-vlts.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.obis.org/obis/extension/mbg/terms/MBGVLTS",
+      "subject": "dwc:Occurrence"
+    },
+    {
+      "description": "The category of information pertaining to the physical results of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed. Created 2 Apr 2014 with all Simple Darwin Core ratified terms.",
+      "title": "Darwin Core Material Sample",
+      "url": "http://rs.gbif.org/sandbox/core/dwc_material_sample.xml",
+      "issued": "2015-02-13",
+      "isLatest": true,
+      "identifier": "http://rs.tdwg.org/dwc/terms/MaterialSample",
+      "subject": null
+    },
+    {
+      "description": "The Germplasm Vocabulary provides a set of terms (supplementing the Darwin Core terms) for describing genebank accessions. These terms are maintained by the thematic community of plant genetic resources for food and agriculture (PGRFA). Most of these terms are imported from the Multi-Crop Passport Descriptor List (MCPD) maintained by Bioversity International and the Food and Agriculture Organization of the United Nations (FAO). Some terms were also developed by the European Cooperative Programme for Plant Genetic Resources (ECPGR).",
+      "title": "Germplasm accession (v20140515)",
+      "url": "http://rs.gbif.org/extension/germplasm/GermplasmAccession.xml",
+      "issued": "2014-05-20",
+      "isLatest": true,
+      "identifier": "http://purl.org/germplasm/germplasmTerm#GermplasmAccession",
+      "subject": null
+    },
+    {
+      "description": "Trait measurements or the so-called Characterization and Evaluation (C and E) data for plant genetic resources for food and agriculture (PGRFA). The germplasm vocabulary term g.germplasmID is a persistent identifier for the germplasm material (genebank accession, specimen, cultivar, etc that was the subject of the measurement experiment. NB! please report stable and resolvable persistent identifiers for g.germplasmID term when linking the trait measurement score to a germplasm occurrence described in an external Darwin Core archive. When linking to trait measurement descriptors and measurement trials described extenally to the Darwin Core archive, please include stable and resolvable persistent identifiers for g.measurementTraitID and g.measurementTrialID - resolving to information on each entity.",
+      "title": "Trait measurement score (v20140515)",
+      "url": "http://rs.gbif.org/extension/germplasm/MeasurementScore.xml",
+      "issued": "2014-05-15",
+      "isLatest": true,
+      "identifier": "http://purl.org/germplasm/germplasmTerm#MeasurementScore",
+      "subject": null
+    },
+    {
+      "description": "Trait descriptors describing methods and protocols followed when making trait measurements or the so-called Characterization and Evaluation (C and E) data for plant genetic resources for food and agriculture (PGRFA).",
+      "title": "Trait descriptor (v20140515)",
+      "url": "http://rs.gbif.org/extension/germplasm/MeasurementTrait.xml",
+      "issued": "2014-05-08",
+      "isLatest": true,
+      "identifier": "http://purl.org/germplasm/germplasmTerm#MeasurementTrait",
+      "subject": null
+    },
+    {
+      "description": "Measurement trial (field or greenhouse) to collect trait measurements or so-called Characterization and Evaluation (C and E) data for plant genetic resources for food and agriculture (PGRFA).",
+      "title": "Trait measurement trial (v20140515)",
+      "url": "http://rs.gbif.org/extension/germplasm/MeasurementTrial.xml",
+      "issued": "2014-05-08",
+      "isLatest": true,
+      "identifier": "http://purl.org/germplasm/germplasmTerm#MeasurementTrial",
+      "subject": null
+    },
+    {
+      "description": "Record agents and optionally the specific roles they played in the context of executing actions on occurrences.",
+      "title": "Agent Actions",
+      "url": "https://github.com/tdwg/attribution/blob/master/dwc/agent_actions_v2107-07-26.xml",
+      "issued": "2019-08-01",
+      "isLatest": true,
+      "identifier": "http://purl.org/atrrbution/agentActions",
+      "subject": null
+    }
+  ]
+}
