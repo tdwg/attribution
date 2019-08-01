@@ -25,7 +25,7 @@
         required="true"/>
     <property 
         name="identifierType"
-        thesaurus="https://github.com/tdwg/attribution/blob/master/dwc/vocabulary/identifierType.xml"
+        thesaurus="https://raw.githubusercontent.com/tdwg/attribution/master/dwc/vocubulary/identifierType.xml"
         namespace="https://github.com/tdwg/attribution/dwc/terms/" 
         qualName="https://github.com/tdwg/attribution/dwc/terms/identifierType" 
         dc:description="The type of identifier." 
@@ -89,7 +89,7 @@
         required="false"/>
     <property 
         name="action"
-        thesaurus="https://github.com/tdwg/attribution/blob/master/dwc/vocabulary/action.xml"
+        thesaurus="https://raw.githubusercontent.com/tdwg/attribution/master/dwc/vocubulary/action.xml"
         namespace="https://github.com/tdwg/attribution/dwc/terms/" 
         qualName="https://github.com/tdwg/attribution/dwc/terms/action" 
         dc:description="The name of the action. Muste be a URI." 
@@ -98,7 +98,7 @@
         required="true"/>
     <property 
         name="role"
-        thesaurus="https://github.com/tdwg/attribution/blob/master/dwc/vocabulary/role.xml"
+        thesaurus="https://raw.githubusercontent.com/tdwg/attribution/master/dwc/vocubulary/role.xml"
         namespace="https://github.com/tdwg/attribution/dwc/terms/" 
         qualName="https://github.com/tdwg/attribution/dwc/terms/role" 
         dc:description="The name of the role agent played in the context of executing the action." 
