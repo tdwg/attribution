@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <thesaurus 
   dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/" 
-  dc:description="Vocabulary of identifier types for agents associated in the collection, preparation, and dissemination of occurrence data" 
+  dc:description="Vocabulary of identifier types for agents that executed actions on occurrences" 
   dc:relation=""
   dc:title="AgentActions identifierType vocabulary"
   dc:issued="2019-07-31"
