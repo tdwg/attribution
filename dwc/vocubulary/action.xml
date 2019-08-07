@@ -15,7 +15,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="identified" dc:URI="https://vivo.mydomain.org/action/collected" dc:relation="https://vivo.mydomain.org/action/collected" dc:description="identified the object">
+  <concept dc:identifier="identified" dc:URI="https://vivo.mydomain.org/action/identified" dc:relation="https://vivo.mydomain.org/action/identified" dc:description="determined the identity of the object">
     <preferred>
       <term dc:title="identified" xml:lang="en"/>
     </preferred>
