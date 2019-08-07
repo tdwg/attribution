@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <thesaurus 
-  dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/" 
+  dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/" 
   dc:description="Vocabulary of identifier types for agents that executed actions on occurrences" 
   dc:relation=""
   dc:title="AgentActions identifierType vocabulary"
   dc:issued="2019-07-31"
   xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
-  <concept dc:identifier="ORCID" dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/ORCID" dc:relation="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/ORCID" dc:description="Open Researcher and Contributor ID (ORCID)">
+  <concept dc:identifier="ORCID" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ORCID" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ORCID" dc:description="Open Researcher and Contributor ID (ORCID)">
     <preferred>
       <term dc:title="ORCID" xml:lang="en"/>
     </preferred>
@@ -15,7 +15,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="VIAF" dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/VIAF" dc:relation="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/VIAF" dc:description="Virtual International Authority File (VIAF)">
+  <concept dc:identifier="VIAF" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/VIAF" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/VIAF" dc:description="Virtual International Authority File (VIAF)">
     <preferred>
       <term dc:title="VIAF" xml:lang="en"/>
     </preferred>
@@ -23,7 +23,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="ISNI" dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/ISNI" dc:relation="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/ISNI" dc:description="International Standard Name Identifier (ISNI)">
+  <concept dc:identifier="ISNI" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ISNI" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ISNI" dc:description="International Standard Name Identifier (ISNI)">
     <preferred>
       <term dc:title="ISNI" xml:lang="en"/>
     </preferred>
@@ -31,7 +31,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="wikidata" dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/wikidata" dc:relation="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/wikidata" dc:description="Wikidata QID">
+  <concept dc:identifier="wikidata" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/wikidata" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/wikidata" dc:description="Wikidata QID">
     <preferred>
       <term dc:title="wikidata" xml:lang="en"/>
     </preferred>

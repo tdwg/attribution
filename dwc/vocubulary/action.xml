@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <thesaurus 
-  dc:URI="https://github.com/tdwg/attribution/dwc/vocabulary/identifierType/" 
+  dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/" 
   dc:description="Vocabulary of actions executed by agents on occurrences" 
   dc:relation=""
   dc:title="AgentActions action vocabulary"
