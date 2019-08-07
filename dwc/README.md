@@ -4,8 +4,8 @@
 2. Find ipt.properties in your IPT's data directory and add:
 
 ```
-dev.registry.url=https\\://tdwg.github.io/attribution/dwc
-dev.registrydev.url=https\\://tdwg.github.io/attribution/dwc
+dev.registry.url=https\://tdwg.github.io/attribution/dwc
+dev.registrydev.url=https\://tdwg.github.io/attribution/dwc
 ```
 
 ## Warning
