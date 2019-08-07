@@ -122,7 +122,7 @@
         type="string" 
         required="false"/>
      <property 
-         name="startDate" 
+         name="endDate" 
          namespace="https://schema.org/" 
          qualName="https://schema.org/endDate" 
          dc:description="End date/time in ISO 8601 for when action taken on occurrence was completed." 
