@@ -7,7 +7,7 @@
   dc:issued="2019-07-31"
   xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
-  <concept dc:identifier="collected" dc:URI="https://vivo.mydomain.org/action/collected" dc:relation="https://vivo.mydomain.org/action/collected" dc:description="collected the object">
+  <concept dc:identifier="collected" dc:URI="https://vivo.mydomain.org/action/collected" dc:relation="https://vivo.mydomain.org/action/collected" dc:description="collected the subject">
     <preferred>
       <term dc:title="collected" xml:lang="en"/>
     </preferred>
@@ -15,9 +15,25 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="identified" dc:URI="https://vivo.mydomain.org/action/identified" dc:relation="https://vivo.mydomain.org/action/identified" dc:description="determined the identity of the object">
+  <concept dc:identifier="identified" dc:URI="https://vivo.mydomain.org/action/identified" dc:relation="https://vivo.mydomain.org/action/identified" dc:description="assigned the subject to a taxon">
     <preferred>
       <term dc:title="identified" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="georeferenced" dc:URI="https://vivo.mydomain.org/action/georeferenced" dc:relation="https://vivo.mydomain.org/action/georeferenced" dc:description="determined the georeference (spatial representation) for the location">
+    <preferred>
+      <term dc:title="georeferenced" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="measured" dc:URI="https://vivo.mydomain.org/action/measured" dc:relation="https://vivo.mydomain.org/action/measured" dc:description="determined the value of a measurement">
+    <preferred>
+      <term dc:title="measured" xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>

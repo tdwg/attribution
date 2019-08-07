@@ -579,7 +579,7 @@
     {
       "description": "Record agents and optionally the specific roles they played in the context of executing actions on occurrences.",
       "title": "Agent Actions",
-      "url": "https://raw.githubusercontent.com/tdwg/attribution/master/dwc/agent_actions_v2107-07-26.xml",
+      "url": "https://tdwg.github.io/attribution/dwc/agent_actions_v2107-07-26.xml",
       "issued": "2019-08-01",
       "isLatest": true,
       "identifier": "http://purl.org/attribution/agentActions",
