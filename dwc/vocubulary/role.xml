@@ -7,7 +7,7 @@
   dc:issued="2019-07-31"
   xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
-  <concept dc:identifier="primary" dc:URI="https://vivo.mydomain.org/role/primary" dc:relation="https://vivo.mydomain.org/role/primary" dc:description="primary collector">
+  <concept dc:identifier="primary" dc:URI="https://vivo.mydomain.org/role/primary" dc:relation="https://vivo.mydomain.org/role/primary" dc:description="Primary agent associated with the subject. In the case of a list of collectors,this is the primary collector role.">
     <preferred>
       <term dc:title="primary" xml:lang="en"/>
     </preferred>
@@ -15,7 +15,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="other" dc:URI="https://vivo.mydomain.org/action/other" dc:relation="https://vivo.mydomain.org/action/other" dc:description="other collector">
+  <concept dc:identifier="other" dc:URI="https://vivo.mydomain.org/action/other" dc:relation="https://vivo.mydomain.org/action/other" dc:description="Other agent associated with the subject. In the case of a list of collectors, this role represents all other, secondary collectors.">
     <preferred>
       <term dc:title="other" xml:lang="en"/>
     </preferred>
