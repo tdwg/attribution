@@ -17,9 +17,9 @@
     dc:subject="dwc:Occurrence">
     <property
         name="type"
-        namespace="https://tdwg.github.io/attribution/dwc/terms/"
-        qualName="https://tdwg.github.io/attribution/dwc/terms/type"
-        dc:description="The type of agent, either a person or an organization."
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/type"
+        dc:description="The nature or genre of the resource. Recommended practice is to use a controlled vocabulary."
         examples='"http://schema.org/Person", "http://schema.org/Organization"'
         type="string"
         required="true"/>
@@ -28,14 +28,14 @@
         thesaurus="https://tdwg.github.io/attribution/dwc/vocubulary/identifierType.xml"
         namespace="https://tdwg.github.io/attribution/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/dwc/terms/identifierType"
-        dc:description="The type of identifier."
+        dc:description="The type of identifier. Recommended best practice is to use a controlled vocabulary."
         examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"'
         required="true"/>
     <property
         name="identifier"
-        namespace="https://schema.org/"
-        qualName="https://schema.org/identifier"
-        dc:description="The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links."
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/identifier"
+        dc:description="Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs."
         examples="https://orcid.org/0000-0001-6201-7340"
         type="string"
         required="true"/>
@@ -46,7 +46,7 @@
         dc:description="The name of the item. In this case the full name as woud be written on a legal document (without abbreviation), eg givenName familyName"
         examples="Margaret Smith"
         type="string"
-        required="false"/>
+        required="true"/>
     <property
         name="givenName"
         namespace="https://schema.org/"
@@ -73,8 +73,8 @@
         required="false"/>
     <property
         name="verbatimName"
-        namespace="https://schema.org/"
-        qualName="https://schema.org/Text"
+        namespace="https://tdwg.github.io/attribution/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/dwc/terms/verbatimName"
         dc:description="As written on occurrence, such as the collection or determination label."
         examples="MC Smith"
         type="string"
@@ -84,7 +84,7 @@
         thesaurus="https://tdwg.github.io/attribution/dwc/vocubulary/action.xml"
         namespace="https://tdwg.github.io/attribution/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/dwc/terms/action"
-        dc:description="The name of the single action."
+        dc:description="The name of the single action. Recommended best practice is to use a controlled vocabulary."
         examples='"collected","identified"'
         type="string"
         required="true"/>
@@ -93,8 +93,8 @@
         thesaurus="https://tdwg.github.io/attribution/dwc/vocubulary/role.xml"
         namespace="https://tdwg.github.io/attribution/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/dwc/terms/role"
-        dc:description="The name of the role agent played in the context of executing the action."
-        examples='"primary collector","participant in collecting party"'
+        dc:description="The name of the role the agent played in the context of executing the action. Not to be confused with the agent's role in an organization. Recommended best practice is to use a controlled vocabulary"
+        examples='"primary collector","participant"'
         type="string"
         required="false"/>
     <property
@@ -109,7 +109,7 @@
         name="startDate"
         namespace="https://schema.org/"
         qualName="https://schema.org/startDate"
-        dc:description="Start date/time in ISO 8601 for when action taken on occurrence was initiated."
+        dc:description="Start date/time for when action taken on occurrence was initiated."
         examples="2012-12-02"
         type="string"
         required="false"/>
@@ -117,7 +117,7 @@
          name="endDate"
          namespace="https://schema.org/"
          qualName="https://schema.org/endDate"
-         dc:description="End date/time in ISO 8601 for when action taken on occurrence was completed."
+         dc:description="End date/time for when action taken on occurrence was completed."
          examples="2012-12-03"
          type="string"
          required="false"/>

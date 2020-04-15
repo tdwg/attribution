@@ -52,7 +52,7 @@
 
   <concept dc:identifier="RoR" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/RoR" dc:relation="" dc:description="Research Organization Registry (RoR), https://ror.org/">
     <preferred>
-      <term dc:title="ringgold" xml:lang="en"/>
+      <term dc:title="RoR" xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
