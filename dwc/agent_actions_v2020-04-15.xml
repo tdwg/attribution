@@ -94,7 +94,7 @@
         namespace="https://tdwg.github.io/attribution/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/dwc/terms/role"
         dc:description="The name of the role the agent played in the context of executing the action. Not to be confused with the agent's role in an organization. Recommended best practice is to use a controlled vocabulary"
-        examples='"primary collector","participant"'
+        examples='"major-effort","participant"'
         type="string"
         required="false"/>
     <property
