@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<thesaurus 
-  dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/" 
-  dc:description="Vocabulary of actions executed by agents on occurrences" 
+<thesaurus
+  dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/action/"
+  dc:description="Vocabulary of actions executed by agents on occurrences"
   dc:relation=""
   dc:title="AgentActions action vocabulary"
-  dc:issued="2019-07-31"
+  dc:issued="2020-04-15"
   xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
-  <concept dc:identifier="collected" dc:URI="https://vivo.mydomain.org/action/collected" dc:relation="https://vivo.mydomain.org/action/collected" dc:description="collected the subject">
+  <concept dc:identifier="collected" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/action/collected" dc:relation="" dc:description="collected the subject">
     <preferred>
       <term dc:title="collected" xml:lang="en"/>
     </preferred>
@@ -15,7 +15,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="observed" dc:URI="https://vivo.mydomain.org/action/observed" dc:relation="https://vivo.mydomain.org/action/observed" dc:description="Observed the subject">
+  <concept dc:identifier="observed" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/action/observed" dc:relation="" dc:description="Observed the subject">
     <preferred>
       <term dc:title="observed" xml:lang="en"/>
     </preferred>
@@ -23,7 +23,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="identified" dc:URI="https://vivo.mydomain.org/action/identified" dc:relation="https://vivo.mydomain.org/action/identified" dc:description="Assigned the subject to a taxon">
+  <concept dc:identifier="identified" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/action/identified" dc:relation="" dc:description="Assigned the subject to a taxon">
     <preferred>
       <term dc:title="identified" xml:lang="en"/>
     </preferred>
@@ -31,7 +31,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="georeferenced" dc:URI="https://vivo.mydomain.org/action/georeferenced" dc:relation="https://vivo.mydomain.org/action/georeferenced" dc:description="Determined the georeference (spatial representation) for the location">
+  <concept dc:identifier="georeferenced" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/action/georeferenced" dc:relation="" dc:description="Determined the georeference (spatial representation) for the location">
     <preferred>
       <term dc:title="georeferenced" xml:lang="en"/>
     </preferred>
@@ -39,17 +39,9 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="measured" dc:URI="https://vivo.mydomain.org/action/measured" dc:relation="https://vivo.mydomain.org/action/measured" dc:description="Determined the value of a measurement">
+  <concept dc:identifier="measured" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/action/measured" dc:relation="" dc:description="Determined the value of a measurement">
     <preferred>
       <term dc:title="measured" xml:lang="en"/>
-    </preferred>
-    <alternative>
-    </alternative>
-  </concept>
-
-  <concept dc:identifier="conserved" dc:URI="https://vivo.mydomain.org/action/conserved" dc:relation="https://vivo.mydomain.org/action/conserved" dc:description="Took conservation action on the subject">
-    <preferred>
-      <term dc:title="conserved" xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>

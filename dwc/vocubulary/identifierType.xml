@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<thesaurus 
-  dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/" 
-  dc:description="Vocabulary of identifier types for agents that executed actions on occurrences" 
+<thesaurus
+  dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/"
+  dc:description="Vocabulary of identifier types for agents that executed actions on occurrences"
   dc:relation=""
   dc:title="AgentActions identifierType vocabulary"
-  dc:issued="2019-07-31"
+  dc:issued="2020-04-15"
   xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
-  <concept dc:identifier="ORCID" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ORCID" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ORCID" dc:description="Open Researcher and Contributor ID (ORCID), https://orcid.org/">
+  <concept dc:identifier="ORCID" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ORCID" dc:relation="" dc:description="Open Researcher and Contributor ID (ORCID), https://orcid.org/">
     <preferred>
       <term dc:title="ORCID" xml:lang="en"/>
     </preferred>
@@ -15,7 +15,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="VIAF" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/VIAF" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/VIAF" dc:description="Virtual International Authority File (VIAF), https://viaf.org/">
+  <concept dc:identifier="VIAF" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/VIAF" dc:relation="" dc:description="Virtual International Authority File (VIAF), https://viaf.org/">
     <preferred>
       <term dc:title="VIAF" xml:lang="en"/>
     </preferred>
@@ -23,7 +23,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="ISNI" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ISNI" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ISNI" dc:description="International Standard Name Identifier (ISNI), http://www.isni.org/">
+  <concept dc:identifier="ISNI" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ISNI" dc:relation="" dc:description="International Standard Name Identifier (ISNI), http://www.isni.org/">
     <preferred>
       <term dc:title="ISNI" xml:lang="en"/>
     </preferred>
@@ -31,7 +31,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="GRID" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/GRID" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/GRID" dc:description="Global Research Identifier Database (GRID), https://www.grid.ac/">
+  <concept dc:identifier="GRID" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/GRID" dc:relation="" dc:description="Global Research Identifier Database (GRID), https://www.grid.ac/">
     <preferred>
       <term dc:title="GRID" xml:lang="en"/>
     </preferred>
@@ -39,7 +39,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="ringgold" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ringgold" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ringgold" dc:description="Ringgold Identify Database, https://www.ringgold.com/">
+  <concept dc:identifier="ringgold" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ringgold" dc:relation="" dc:description="Ringgold Identify Database, https://www.ringgold.com/">
     <preferred>
       <term dc:title="ringgold" xml:lang="en"/>
     </preferred>
@@ -47,7 +47,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="RoR" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/RoR" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/RoR" dc:description="Research Organization Registry (RoR), https://ror.org/">
+  <concept dc:identifier="RoR" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/RoR" dc:relation="" dc:description="Research Organization Registry (RoR), https://ror.org/">
     <preferred>
       <term dc:title="ringgold" xml:lang="en"/>
     </preferred>
@@ -55,7 +55,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="wikidata" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/wikidata" dc:relation="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/wikidata" dc:description="Wikidata QID, https://www.wikidata.org/">
+  <concept dc:identifier="wikidata" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/wikidata" dc:relation="" dc:description="Wikidata QID, https://www.wikidata.org/">
     <preferred>
       <term dc:title="wikidata" xml:lang="en"/>
     </preferred>
