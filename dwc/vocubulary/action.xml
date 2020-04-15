@@ -5,7 +5,10 @@
   dc:relation=""
   dc:title="AgentActions action vocabulary"
   dc:issued="2020-04-15"
-  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+  xmlns="http://rs.gbif.org/thesaurus/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
   <concept dc:identifier="collected" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/action/collected" dc:relation="" dc:description="collected the subject">
     <preferred>
