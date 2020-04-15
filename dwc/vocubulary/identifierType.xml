@@ -5,7 +5,10 @@
   dc:relation=""
   dc:title="AgentActions identifierType vocabulary"
   dc:issued="2020-04-15"
-  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+  xmlns="http://rs.gbif.org/thesaurus/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
   <concept dc:identifier="ORCID" dc:URI="https://tdwg.github.io/attribution/dwc/vocabulary/identifierType/ORCID" dc:relation="" dc:description="Open Researcher and Contributor ID (ORCID), https://orcid.org/">
     <preferred>
