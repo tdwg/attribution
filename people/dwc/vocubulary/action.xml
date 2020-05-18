@@ -10,7 +10,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
-  <concept dc:identifier="collected" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/collected" dc:relation="" dc:description="collected the subject">
+  <concept dc:identifier="collected" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/collected" dc:relation="" dc:description="Collected the subject">
     <preferred>
       <term dc:title="collected" xml:lang="en"/>
     </preferred>

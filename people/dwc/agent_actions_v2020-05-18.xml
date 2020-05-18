@@ -30,6 +30,7 @@
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/identifierType"
         dc:description="The type of identifier. Recommended best practice is to use a controlled vocabulary."
         examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"'
+        type:"string"
         required="true"/>
     <property
         name="identifier"
@@ -84,7 +85,7 @@
         thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/action.xml"
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/action"
-        dc:description="The name of the single action. Recommended best practice is to use a controlled vocabulary."
+        dc:description="The name of the single action written as a verb in past tense. Recommended best practice is to use a controlled vocabulary."
         examples='"collected","identified"'
         type="string"
         required="true"/>
@@ -93,7 +94,7 @@
         thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/role.xml"
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/role"
-        dc:description="The name of the role the agent played in the context of executing the action. Not to be confused with the agent's role in an organization. Recommended best practice is to use a controlled vocabulary"
+        dc:description="The name of the role the agent played in the context of executing the action. Not to be confused with the agent's role in an organization. Recommended best practice is to use a controlled vocabulary."
         examples='"major-effort","participant"'
         type="string"
         required="false"/>
@@ -106,19 +107,19 @@
         type="integer"
         required="false"/>
     <property
-        name="startDate"
-        namespace="https://schema.org/"
-        qualName="https://schema.org/startDate"
-        dc:description="Start date/time for when action taken on occurrence was initiated."
-        examples="2012-12-02"
-        type="string"
+        name="startedAtTime"
+        namespace="http://www.w3.org/ns/prov#"
+        qualName="http://www.w3.org/ns/prov#startedAtTime"
+        dc:description="Start is when an activity is deemed to have been started by an entity."
+        examples="2012-04-25T01:30:00Z"
+        type="date"
         required="false"/>
      <property
-         name="endDate"
-         namespace="https://schema.org/"
-         qualName="https://schema.org/endDate"
-         dc:description="End date/time for when action taken on occurrence was completed."
-         examples="2012-12-03"
-         type="string"
+         name="endedAtTime"
+         namespace="http://www.w3.org/ns/prov#"
+         qualName="http://www.w3.org/ns/prov#endedAtTime"
+         dc:description="End is when an activity is deemed to have been ended by an entity."
+         examples="2012-04-25T03:40:00Z"
+         type="date"
          required="false"/>
 </extension>
