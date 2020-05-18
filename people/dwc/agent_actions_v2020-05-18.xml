@@ -9,9 +9,9 @@
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="AgentActions"
     name="AgentActions"
-    namespace="https://tdwg.github.io/attribution/dwc/"
-    rowType="https://tdwg.github.io/attribution/dwc/AgentActions"
-    dc:issued="2020-04-15"
+    namespace="https://tdwg.github.io/attribution/people/dwc/"
+    rowType="https://tdwg.github.io/attribution/people/dwc/AgentActions"
+    dc:issued="2020-05-18"
     dc:description="Extension to Occurrence Core to capture agents and optionally the specific roles they played in the context of executing actions on occurrences."
     dc:relation=""
     dc:subject="dwc:Occurrence">
@@ -25,9 +25,9 @@
         required="true"/>
     <property
         name="identifierType"
-        thesaurus="https://tdwg.github.io/attribution/dwc/vocubulary/identifierType.xml"
-        namespace="https://tdwg.github.io/attribution/dwc/terms/"
-        qualName="https://tdwg.github.io/attribution/dwc/terms/identifierType"
+        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/identifierType.xml"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/identifierType"
         dc:description="The type of identifier. Recommended best practice is to use a controlled vocabulary."
         examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"'
         required="true"/>
@@ -73,7 +73,7 @@
         required="false"/>
     <property
         name="verbatimName"
-        namespace="https://tdwg.github.io/attribution/dwc/terms/"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/dwc/terms/verbatimName"
         dc:description="As written on occurrence, such as the collection or determination label."
         examples="MC Smith"
@@ -81,18 +81,18 @@
         required="false"/>
     <property
         name="action"
-        thesaurus="https://tdwg.github.io/attribution/dwc/vocubulary/action.xml"
-        namespace="https://tdwg.github.io/attribution/dwc/terms/"
-        qualName="https://tdwg.github.io/attribution/dwc/terms/action"
+        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/action.xml"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/action"
         dc:description="The name of the single action. Recommended best practice is to use a controlled vocabulary."
         examples='"collected","identified"'
         type="string"
         required="true"/>
     <property
         name="role"
-        thesaurus="https://tdwg.github.io/attribution/dwc/vocubulary/role.xml"
-        namespace="https://tdwg.github.io/attribution/dwc/terms/"
-        qualName="https://tdwg.github.io/attribution/dwc/terms/role"
+        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/role.xml"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/role"
         dc:description="The name of the role the agent played in the context of executing the action. Not to be confused with the agent's role in an organization. Recommended best practice is to use a controlled vocabulary"
         examples='"major-effort","participant"'
         type="string"
