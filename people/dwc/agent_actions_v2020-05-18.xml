@@ -24,11 +24,11 @@
         type="string"
         required="true"/>
     <property
-        name="identifierType"
-        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/identifierType.xml"
+        name="agentIdentifierType"
+        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/agentIdentifierType.xml"
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
-        qualName="https://tdwg.github.io/attribution/people/dwc/terms/identifierType"
-        dc:description="The type of identifier. Recommended best practice is to use a controlled vocabulary."
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/agentIdentifierType"
+        dc:description="The type of identifier for the agent. Recommended best practice is to use a controlled vocabulary."
         examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"'
         type:"string"
         required="true"/>
