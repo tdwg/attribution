@@ -31,7 +31,7 @@
         dc:description="The type of identifier for the agent. Recommended best practice is to use a controlled vocabulary."
         examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"'
         type="string"
-        required="true"/>
+        required="false"/>
     <property
         name="identifier"
         namespace="http://purl.org/dc/terms/"
@@ -39,7 +39,7 @@
         dc:description="Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs."
         examples="https://orcid.org/0000-0001-6201-7340"
         type="string"
-        required="true"/>
+        required="false"/>
     <property
         name="name"
         namespace="https://schema.org/"
