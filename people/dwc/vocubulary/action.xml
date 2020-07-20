@@ -18,9 +18,17 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="observed" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/observed" dc:relation="" dc:description="Observed the subject">
+  <concept dc:identifier="identified" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/identified" dc:relation="" dc:description="Assigned the subject to a taxon">
     <preferred>
-      <term dc:title="observed" xml:lang="en"/>
+      <term dc:title="identified" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="verified" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/verified" dc:relation="" dc:description="Assigned the subject to a taxon in concordance with a prior determination.">
+    <preferred>
+      <term dc:title="verified" xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
@@ -53,6 +61,14 @@
   <concept dc:identifier="measured" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/measured" dc:relation="" dc:description="Determined the value of a measurement">
     <preferred>
       <term dc:title="measured" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="transcribed" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/transcribed" dc:relation="" dc:description="Put written text on the object to a digital form">
+    <preferred>
+      <term dc:title="transcribed" xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>

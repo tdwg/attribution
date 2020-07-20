@@ -49,6 +49,14 @@
         type="string"
         required="true"/>
     <property
+        name="additionalName"
+        namespace="https://schema.org/"
+        qualName="https://schema.org/additionalName"
+        dc:description="An additional name for a Person, can be used for a middle name."
+        examples="Anne"
+        type="string"
+        required="false"/>
+    <property
         name="alternateName"
         namespace="https://schema.org/"
         qualName="https://schema.org/alternateName"
