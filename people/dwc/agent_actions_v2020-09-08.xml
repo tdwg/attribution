@@ -11,7 +11,7 @@
     name="AgentActions"
     namespace="https://tdwg.github.io/attribution/people/dwc/"
     rowType="https://tdwg.github.io/attribution/people/dwc/AgentActions"
-    dc:issued="2020-05-18"
+    dc:issued="2020-09-08"
     dc:description="Extension to Occurrence Core to capture agents and optionally the specific roles they played in the context of executing actions on occurrences."
     dc:relation=""
     dc:subject="dwc:Occurrence">
@@ -97,6 +97,14 @@
         dc:description="The display order for the agent that executed the action when more than one agent was a participant."
         examples='1'
         type="integer"
+        required="false"/>
+    <property
+        name="identificationID"
+        namespace="http://rs.tdwg.org/dwc/terms/"
+        qualName="http://rs.tdwg.org/dwc/terms/identificationID"
+        dc:description="An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set. The intent of this term is to maintain the relational integrity between the identified action and a particular determination/annotation expressed in the Identification History Extension when present."
+        examples='9992'
+        type="string"
         required="false"/>
     <property
         name="startedAtTime"
