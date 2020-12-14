@@ -50,14 +50,14 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="preserved" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/preserved" dc:relation="" dc:description="Maintained the subject in its original or existing state">
+  <concept dc:identifier="preserved" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/preserved" dc:relation="" dc:description="Maintained the subject in its original state or in a conserved state to prevent the subject from decomposing">
     <preferred>
       <term dc:title="preserved" xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  
+
   <concept dc:identifier="georeferenced" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/georeferenced" dc:relation="" dc:description="Determined the georeference (spatial representation) for the location">
     <preferred>
       <term dc:title="georeferenced" xml:lang="en"/>
