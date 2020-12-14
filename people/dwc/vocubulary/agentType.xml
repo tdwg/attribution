@@ -28,7 +28,7 @@
 
   <concept dc:identifier="SoftwareApplication" dc:URI="https://schema.org/SoftwareApplication" dc:relation="" dc:description="A software application.">
     <preferred>
-      <term dc:title="ISNI" xml:lang="en"/>
+      <term dc:title="SoftwareApplication" xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
